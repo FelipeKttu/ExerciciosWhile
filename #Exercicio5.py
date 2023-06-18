@@ -17,4 +17,4 @@ for cont in range(2,num):
     cubo = num * num * num
     cont += 1
 
-    print('O seu numero é {} Seu quadrado é {} Seu cubo é {}'.format(num,quadrado,cubo))
+    print('O seu numero é {} Seu quadrado é {} Seu cubo é {}'.format(num, quadrado, cubo))

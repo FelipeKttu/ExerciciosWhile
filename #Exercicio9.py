@@ -3,20 +3,22 @@
 reais. logo em seguida, deve ser solicitado ao usuário que digite dois números. Esses números devem corresponder
 a posiçoes na lista (caso contrário solicite um novo valor). Após inserir dois números o programa deve exibir
 a soma dos elementos das duas posições da lista'''
-C = 0
-V = 0
-L = []
 
-while C < 5:
-    V = float(input('Digite um valor real para adicionar a lista:'))
-    L.append(V)
-    C = C + 1
+cont = 0
+valor = 0
+lista = []
 
-P1 = int(input('Digite a primeira posição da lista para somar:'))
-P2 = int(input('Digite a segunda posição da lista para somar: '))
+while cont < 5:
+    valor = float(input('Digite um valor real para adicionar a lista:'))
+    lista.append(valor)
+    cont = cont + 1
 
-if P1 > 0 and P1 < 6 and P2 > 0 and P2 < 6:
-   P1Valor = L[P1 - 1]
-   P2Valor = L[P2 - 1]
-   Soma = P1Valor + P2Valor
-   print('A soma da posição {} com valor {} e da segunda posição {} de valor {} é {}'.format(P1,P1Valor,P2,P2Valor,Soma))
+primeira_posic = int(input('Digite a primeira posição da lista para somar:'))
+segunda_posic = int(input('Digite a segunda posição da lista para somar: '))
+
+if primeira_posic > 0 and primeira_posic < 6 and segunda_posic > 0 and segunda_posic < 6:
+   valorPosic1 = lista[primeira_posic - 1]
+   valorPosic2 = lista[segunda_posic - 1]
+   soma = valorPosic1 + valorPosic2
+
+   print('A soma da posição {} com valor {} e da segunda posição {} de valor {} é {}'.format(primeira_posic, valorPosic1, segunda_posic, valorPosic2, soma))
